@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Private Portal</title>
     <style>
-        body { background-color: #0d1117; color: #58a6ff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        body { background-color: #0d1117; color: #58a6ff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
         .container { background: #161b22; padding: 30px; border-radius: 15px; border: 1px solid #30363d; text-align: center; width: 280px; }
         input { width: 90%; padding: 12px; margin-bottom: 20px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white; text-align: center; }
         button { width: 100%; padding: 12px; border-radius: 6px; border: none; background: #238636; color: white; font-weight: bold; cursor: pointer; }
@@ -19,20 +19,24 @@
         <h2 style="color:white">ACCESS CODE</h2>
         <input type="password" id="passCode" placeholder="Enter Code">
         <button onclick="check()">LOGIN</button>
-    <
-<img src="IMG-6e1361eac2220bb190d75b2a05a670f1-V.jpg" style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
-    
+    </div>
+
     <div class="container content" id="secret-content">
-        <h2 style="color:white">MY FILES</h2>
+        <h2 style="color:white; text-align:center;">MY FILES</h2>
+        
+        <img src="IMG-6e1361eac2220bb190d75b2a05a670f1-V.jpg" style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
+        
         <a href="https://parlanverma.blogspot.com/?m=1">📁 My web 1</a>
         <a href="https://TikTok.com">🎥 Lesson Video</a>
         <a href="https://www.facebook.com/share/1E2Y6kayYs/">🎥 ပါးပါး</a>
+        
         <button onclick="location.reload()" style="margin-top:20px; background:#da3633;">LOGOUT</button>
     </div>
 
     <script>
         function check() {
             var p = document.getElementById("passCode").value;
+            // ကုဒ်က gawgaw4 ဖြစ်ပါတယ်
             if (p == "gawgaw4") {
                 document.getElementById("login-box").style.display = "none";
                 document.getElementById("secret-content").style.display = "block";
